@@ -7,7 +7,7 @@ const timer = () => {
   setInterval(function () {
     tempo++;
     sessionStorage.setItem("time", tempo);
-    document.getElementById("timer").innerHTML = Math.fixed(tempo / 1000);
+    document.getElementById("timer").innerHTML = Math.floor(tempo / 1000);
   });
 };
 function inputName(event) {
