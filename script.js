@@ -2,6 +2,9 @@ window.onload = function () {
   document.getElementById("yourName").innerHTML = localStorage.getItem("user");
 };
 let tempo = 0;
+if (sessionStorage.getItem("time") > 0) {
+  tempo = sessionStorage.getItem("time");
+}
 
 const timer = () => {
   setInterval(function () {
